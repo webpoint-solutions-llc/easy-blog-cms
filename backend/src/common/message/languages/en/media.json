@@ -1,0 +1,10 @@
+{
+    "list": "List Media Success.",
+    "create": "Creating Media Success.",
+    "get": "Get Media Success.",
+    "update": "Update Succeed",
+    "remove": "Remove Succeed",
+    "error": {
+        "notFound": "Media not found"
+    }
+}

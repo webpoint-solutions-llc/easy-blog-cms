@@ -1,0 +1,23 @@
+{
+    "collection": "@nestjs/schematics",
+    "sourceRoot": "src",
+    "compilerOptions": {
+        "assets": [
+            {
+                "include": "common/message/languages/**/*",
+                "watchAssets": true,
+                "outDir": "dist/src"
+            },
+            {
+                "include": "common/mail/template/**/*",
+                "watchAssets": true,
+                "outDir": "dist/src"
+            },
+            {
+                "include": "common/mail/assets/**/*",
+                "watchAssets": true,
+                "outDir": "dist/src"
+            }
+        ]
+    }
+}

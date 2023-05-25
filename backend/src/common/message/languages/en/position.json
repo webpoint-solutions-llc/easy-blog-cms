@@ -1,0 +1,11 @@
+{
+    "list": "List Position Success.",
+    "create": "Creating Position Success.",
+    "get": "Get Position Success.",
+    "findByUserId": "Get Position by userId Success.",
+    "update": "Update Succeed",
+    "remove": "Remove Succeed",
+    "error": {
+        "notFound": "Position not found"
+    }
+}

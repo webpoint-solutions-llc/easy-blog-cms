@@ -1,0 +1,12 @@
+{
+    "list": "List company profile Success.",
+    "create": "Creating company profile Success.",
+    "get": "Get company Success.",
+    "update": "Update Succeed",
+    "remove": "Remove Succeed",
+    "upload": "Uploading resume Succed",
+    "check": "Company Profile Check Success",
+    "error": {
+        "notFound": "Company Profile not found"
+    }
+}

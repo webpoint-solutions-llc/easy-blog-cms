@@ -1,0 +1,11 @@
+{
+    "list": "List blog Success.",
+    "create": "Creating blog Success.",
+    "get": "Get blog Success.",
+    "update": "Update Succeed",
+    "remove": "Remove Succeed",
+    "subscribe": "Successfully subscribe to newsletter",
+    "error": {
+        "notFound": "Blog not found"
+    }
+}

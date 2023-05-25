@@ -1,0 +1,11 @@
+{
+    "list": "List Job Types Success.",
+    "create": "Creating Job Types Success.",
+    "get": "Get Job Types Success.",
+    "findByUserId": "Get Job Types by userId Success.",
+    "update": "Update Succeed",
+    "remove": "Remove Succeed",
+    "error": {
+        "notFound": "Job Types not found"
+    }
+}

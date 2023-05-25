@@ -1,0 +1,11 @@
+{
+    "contact": "Creating Contact Success.",
+    "company": "Creating Company Success.",
+    "getContact": "Get Contact Success.",
+    "getCompany": "Get Company Success.",
+    "updateContact": "Update Contact Succeed.",
+    "UpdateCompany": "Update Company Succeed.",
+    "error": {
+        "notFound": "not found"
+    }
+}

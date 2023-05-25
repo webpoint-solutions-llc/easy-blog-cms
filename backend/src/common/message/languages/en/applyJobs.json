@@ -1,0 +1,12 @@
+{
+    "list": "List application  Success.",
+    "create": "Job application applied successfully.",
+    "get": "Get Job application Success.",
+    "update": "Update Succeed",
+    "remove": "Remove Succeed",
+    "error": {
+        "profileNoutFound": "Please update your profile",
+        "applicationNotFound": "job application not found",
+        "notFound": "Job application not found"
+    }
+}

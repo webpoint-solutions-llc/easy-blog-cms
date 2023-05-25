@@ -1,0 +1,10 @@
+{
+    "list": "List tag Success.",
+    "create": "Creating tag Success.",
+    "get": "Get tag Success.",
+    "update": "Update Succeed",
+    "remove": "Remove Succeed",
+    "error": {
+        "notFound": "Tag not found"
+    }
+}

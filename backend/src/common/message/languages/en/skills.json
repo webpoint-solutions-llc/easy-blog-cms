@@ -1,0 +1,11 @@
+{
+    "list": "List Skills Success.",
+    "create": "Creating Skills Success.",
+    "get": "Get Skill Success.",
+    "findByUserId": "Get Skill by userId Success.",
+    "update": "Update Succeed",
+    "remove": "Remove Succeed",
+    "error": {
+        "notFound": "Skills not found"
+    }
+}

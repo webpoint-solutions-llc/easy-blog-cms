@@ -1,0 +1,10 @@
+{
+    "list": "List Contact Success.",
+    "create": "Creating Contact Success.",
+    "get": "Get Contact Success.",
+    "update": "Update Succeed",
+    "remove": "Remove Succeed",
+    "error": {
+        "notFound": "Contact not found"
+    }
+}
