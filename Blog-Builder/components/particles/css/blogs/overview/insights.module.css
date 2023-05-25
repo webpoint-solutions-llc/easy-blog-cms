@@ -1,0 +1,3 @@
+.insightsContainer {
+  @apply w-full p-6 bg-white shadow-card rounded-lg max-h-fit z-0;
+}

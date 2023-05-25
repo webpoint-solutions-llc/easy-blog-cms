@@ -1,0 +1,11 @@
+.contentContainer {
+  @apply flex w-full justify-between px-6 xl:px-0 pt-[41.5px] pb-[33.5px];
+}
+
+.calendarButton {
+  @apply bg-neutral-200 px-4 py-[10px] rounded-[4px] cursor-pointer hover:bg-neutral-300;
+}
+
+.calendarContainer {
+  @apply absolute right-6 top-3/4 border border-neutral-300 rounded-md z-10;
+}

@@ -1,0 +1,35 @@
+.modal {
+  @apply fixed w-screen h-screen top-0 left-0;
+}
+
+.backdrop {
+  @apply bg-scrim z-10;
+}
+
+.modalContainer {
+  @apply fixed top-1/2 left-1/2 -translate-x-1/2 z-20 -translate-y-1/2 bg-white shadow-card rounded-lg max-w-[640px] px-6 py-8;
+}
+.modalContent {
+  @apply relative pb-6 border-b border-b-dash-color;
+}
+
+.modalHeader {
+  @apply text-h4 text-neutral-900;
+}
+.modalDescription {
+  @apply text-body2 text-neutral-600 mt-3;
+}
+
+.crossIconContainer {
+  @apply absolute top-0 right-0 cursor-pointer;
+}
+.crossIcon {
+  @apply w-6 h-6 text-neutral-700 rotate-45;
+}
+
+.modalFooter {
+  @apply flex justify-end pt-6 gap-4;
+}
+.footerBtn {
+  @apply text-caption text-neutral-900 w-[140px] h-[42px] outline-none;
+}

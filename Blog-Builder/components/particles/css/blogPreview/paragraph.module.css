@@ -1,0 +1,28 @@
+.paragraphContainer,
+.paragraphContainer > p {
+  @apply text-body1 text-neutral-700;
+}
+
+.paragraphContainer > h2,
+.paragraphContainer > h3,
+.paragraphContainer > h4,
+.paragraphContainer > h5,
+.paragraphContainer > h6 {
+  @apply text-body1 font-bold text-neutral-900;
+}
+
+.paragraphContainer a {
+  @apply text-body1 text-link;
+}
+
+.paragraphContainer > ul {
+  @apply list-disc ml-4;
+}
+
+.paragraphContainer li:not(:first-child) {
+  @apply mt-3;
+}
+
+.paragraphContainer li > strong {
+  @apply text-neutral-900;
+}

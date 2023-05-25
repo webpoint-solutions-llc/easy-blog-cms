@@ -1,0 +1,7 @@
+.latestPostsContainer {
+  @apply w-full p-6 bg-white rounded-lg flex flex-col gap-6;
+}
+
+.buttonTextContainer {
+  @apply flex gap-2 items-center text-caption text-neutral-900;
+}

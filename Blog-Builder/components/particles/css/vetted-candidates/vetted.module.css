@@ -1,0 +1,10 @@
+.headingSection {
+  @apply flex justify-between w-full items-center;
+}
+
+.vettedHead {
+  @apply text-h3 text-neutral-900;
+}
+.vettedDescription {
+  @apply text-excerpt2 text-neutral-700;
+}

@@ -1,0 +1,39 @@
+.sideBarContainer {
+  @apply w-4/12 max-w-[280px] min-h-[92vh] flex flex-col gap-3 bg-neutral-900 py-10;
+}
+
+.sideBarButton {
+  @apply flex w-full gap-4 items-center px-8 py-4 cursor-pointer active:bg-side-bar-active;
+}
+
+.sideBarContentActive {
+  @apply text-white bg-side-bar-active;
+}
+.sideBarContentDefault {
+  @apply text-neutral-500 hover:bg-side-bar-hover;
+}
+.sideBarContentSecondaryActive {
+  @apply bg-side-bar-hover;
+}
+
+.chevonDownTranstion {
+  @apply w-5 h-5 transition-all duration-500;
+}
+
+@keyframes scrollUp {
+  from {
+    height: 0;
+    display: hidden;
+  }
+  to {
+    height: 198.19px;
+    display: flex;
+  }
+}
+
+.scrollAnimationDown {
+  animation-name: scrollUp;
+  animation-duration: 0.25s;
+  animation-direction: normal;
+  animation-timing-function: linear;
+}

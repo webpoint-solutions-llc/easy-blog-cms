@@ -1,0 +1,12 @@
+.hoverContent {
+  display: none;
+}
+
+.parent:hover .hoverContent {
+  display: flex;
+}
+
+.parent:hover .blurBackground {
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}

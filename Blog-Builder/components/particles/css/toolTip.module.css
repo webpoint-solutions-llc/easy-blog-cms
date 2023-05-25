@@ -1,0 +1,27 @@
+/* tooltip css for input errors */
+.tooltip .tooltipText {
+  visibility: hidden;
+  width: max-content;
+  background-color: #262626;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 16px;
+
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  right: 0%;
+}
+
+.tooltip .tooltipText::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  border: 5px solid;
+  border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltipText {
+  visibility: visible;
+}

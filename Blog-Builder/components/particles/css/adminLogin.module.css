@@ -1,0 +1,27 @@
+/* For Admin login pages (Login, Forgot password, Reset Password) */
+.page {
+  @apply w-screen h-screen flex bg-background-color items-center justify-center;
+}
+
+.loginContainer {
+  @apply p-10 max-w-[585px] w-full md:min-w-[585px] flex flex-col items-center justify-center bg-white shadow-signupPage;
+}
+
+.formClass {
+  @apply flex flex-col gap-6 mt-8 w-full;
+}
+
+.labelClass {
+  @apply text-body3 text-sm leading-5 text-neutral-900;
+}
+
+.inputContainerClass {
+  @apply flex flex-col gap-[6px];
+}
+
+.bottomLink {
+  @apply flex justify-center mt-4 text-[13px] leading-[17.55px] text-neutral-600;
+}
+.bottomLinkText {
+  @apply w-fit border-b border-neutral-600;
+}

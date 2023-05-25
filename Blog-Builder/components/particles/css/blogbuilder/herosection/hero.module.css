@@ -1,0 +1,4 @@
+.backgroundHero {
+  background: linear-gradient(97.32deg, #498ade -19.63%, #232323 115.3%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='226' height='196' viewBox='0 0 226 196'%3E%3Cpath fill='white' fill-opacity='0.1' d='M209.154 63.8797C253.66 140.967 198.498 177.524 138.848 211.963C79.1975 246.402 13.9051 279.39 -30.6014 202.302C-75.108 125.215 -18.3658 58.0654 41.2844 23.6263C100.935 -10.8128 164.647 -13.2079 209.154 63.8797Z'/%3E%3C/svg%3E");
+}

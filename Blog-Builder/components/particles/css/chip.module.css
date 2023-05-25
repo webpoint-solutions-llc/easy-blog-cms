@@ -1,0 +1,10 @@
+.chipContainer {
+  @apply px-2 py-1 text-caption2 rounded-lg;
+}
+
+.primaryChipContainer {
+  @apply border border-skill-border bg-skill-background text-link;
+}
+.secondaryChipContainer {
+  @apply border border-neutral-400 bg-neutral-200 text-neutral-600;
+}

@@ -1,0 +1,7 @@
+.cardContainer {
+  @apply w-full flex py-[14px] items-center border-b border-b-dash-color;
+}
+
+.contentAction {
+  @apply flex gap-2 items-center px-[14px];
+}

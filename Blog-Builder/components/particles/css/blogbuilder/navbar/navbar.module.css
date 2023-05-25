@@ -1,0 +1,37 @@
+.navContainer {
+  @apply mx-auto py-6 flex justify-between;
+}
+
+.navLogo {
+  @apply w-[175px] h-[36.29px];
+}
+
+.navigateContainer {
+  @apply flex gap-10 items-center;
+}
+.nav {
+  @apply text-navText text-neutral-900;
+}
+.publishButton {
+  @apply w-[140px] py-3 text-button;
+}
+
+.blogOptionsContainer {
+  @apply relative;
+}
+.blogOptionToggle {
+  @apply px-3 py-[10px] border rounded border-neutral-900 cursor-pointer;
+}
+.blogOptionIcon {
+  @apply w-6 h-6 text-neutral-900;
+}
+
+.dropDownContainer {
+  @apply absolute top-full right-0 w-[396px] px-6 py-9 bg-white shadow-notificationContainer flex flex-col gap-6 z-10;
+}
+.dropDownInputContainer {
+  @apply flex flex-col gap-[6px];
+}
+.dropDownInputLabel {
+  @apply text-body3 text-neutral-900;
+}

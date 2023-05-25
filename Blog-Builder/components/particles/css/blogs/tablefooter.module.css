@@ -1,0 +1,7 @@
+.footerContainer {
+  @apply my-8 mx-6 bg-white w-fit flex;
+}
+
+.buttonContainer {
+  @apply w-10 h-10 flex items-center justify-center hover:bg-primary-00 text-body3 text-neutral-900 cursor-pointer;
+}

@@ -1,0 +1,60 @@
+/* Applying the default styles to the button. */
+.btn {
+  @apply font-sans rounded-md flex flex-row flex-nowrap items-center justify-center text-[15px] lg:text-[15px] leading-[20.25px] font-medium max-h-[42px];
+}
+
+/* Setting the padding and the border radius of the button. */
+.smallBtn {
+  @apply px-4 py-2 rounded-md gap-2.5;
+}
+.midBtn {
+  @apply px-5 py-3 rounded-md gap-3;
+}
+.largeBtn {
+  @apply px-6 py-3 rounded-lg gap-3.5;
+}
+
+/* Applying the background color to the button. */
+.primaryBtn {
+  @apply bg-primary-60 hover:bg-primary-20 active:bg-button-active;
+}
+.secondaryBtn {
+  @apply bg-neutral-900 hover:bg-neutral-700 active:bg-neutral-400 border border-neutral-900 text-[#ECECEC];
+}
+.outlineBtn {
+  @apply bg-white text-neutral-900 border border-neutral-900 hover:bg-neutral-800 hover:text-white active:bg-neutral-800 active:text-white;
+}
+.outlineBtnSecondary {
+  @apply bg-transparent text-black hover:bg-neutral-800 hover:text-white active:bg-neutral-800 active:text-black;
+}
+
+/* Setting the width and height of the icon. */
+.smallIcon {
+  @apply w-3 h-3 md:w-4 md:h-4;
+}
+.midIcon {
+  @apply w-4 h-4 md:w-5 md:h-5;
+}
+.largeIcon {
+  @apply w-5 h-5 md:w-6 md:h-6;
+}
+
+.disabled {
+  @apply bg-disabled text-disabled-text;
+}
+
+.opacity {
+  @apply bg-transparent border hover:bg-white/10 active:bg-white/20;
+}
+
+.colorWhite {
+  @apply text-white border-white;
+}
+
+.colorPrimary {
+  @apply text-primary-60 border-primary-60;
+}
+
+.colorBlack {
+  @apply text-black border-black hover:bg-slate-200 active:bg-slate-300;
+}

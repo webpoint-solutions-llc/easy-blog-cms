@@ -1,0 +1,36 @@
+.flexCenter {
+  @apply flex justify-center items-center;
+}
+
+.companyName {
+  @apply text-h5 text-neutral-900 max-w-[176px] break-all;
+}
+
+.companyLocation {
+  @apply text-excerpt2 text-neutral-800 max-w-[176px] break-all;
+}
+.companyBtn {
+  @apply w-[140px] h-[40px];
+}
+
+.detailsContainer {
+  @apply flex flex-col gap-1;
+}
+.detailsTitle {
+  @apply text-body3 text-neutral-700;
+}
+.details {
+  @apply text-body2 text-neutral-800;
+}
+
+.borderBottom {
+  @apply border-b border-dash-color;
+}
+
+.companyDetails {
+  @apply text-bodysmall text-neutral-800 break-all;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

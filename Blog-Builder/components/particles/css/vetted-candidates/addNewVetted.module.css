@@ -1,0 +1,10 @@
+.label {
+  @apply text-body3 text-neutral-900 opacity-70;
+}
+.container {
+  @apply flex flex-col gap-[6px];
+}
+
+.form {
+  @apply max-w-[622px] mt-10 flex flex-col gap-[48px];
+}

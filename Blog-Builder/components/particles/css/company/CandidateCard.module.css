@@ -1,0 +1,27 @@
+.cardContainer {
+  @apply px-4 py-6 bg-white shadow-card rounded-lg flex justify-between;
+}
+
+.imageContainer {
+  @apply w-[89px] h-[89px] flex items-center justify-center rounded-full bg-neutral-300 overflow-hidden;
+}
+
+.candidateDetails {
+  @apply flex flex-col ml-4;
+}
+.candidateName {
+  @apply text-h5 text-candidate-name;
+}
+.candidatePosition {
+  @apply text-excerpt2 text-neutral-800 mt-2;
+}
+.candidateSkillsContainer {
+  @apply flex gap-2 mt-3 flex-wrap;
+}
+
+.activeButton {
+  @apply text-caption text-neutral-900;
+}
+.disableButton {
+  @apply text-caption text-neutral-600 bg-neutral-300 gap-2;
+}

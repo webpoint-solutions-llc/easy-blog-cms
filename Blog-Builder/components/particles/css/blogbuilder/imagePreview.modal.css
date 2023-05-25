@@ -1,0 +1,22 @@
+/* Set the scrollbar width and height */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 12px;
+}
+
+/* Set the track color */
+::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+}
+
+/* Set the thumb color */
+::-webkit-scrollbar-thumb {
+  background-color: #7b7b7b;
+  border-radius: 12px;
+}
+
+/* Set the button color */
+::-webkit-scrollbar-button {
+  background-color: #ccc;
+  display: none;
+}

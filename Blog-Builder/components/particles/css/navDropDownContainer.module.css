@@ -1,0 +1,23 @@
+.navContainer {
+  @apply absolute top-full right-1/2 translate-x-1/3 lg:translate-x-0 lg:right-0 bg-white shadow-notificationContainer z-10;
+}
+
+.notificationSection {
+  @apply w-[300px] lg:w-[525px] px-6 py-6;
+}
+.notificationContainer {
+  @apply pt-6 pb-4 border-y border-y-[#EEEEEE] w-full flex justify-between;
+}
+.defaultIconNotification {
+  @apply w-14 h-14 flex justify-center items-center bg-default-notification-background rounded-full;
+}
+.notificationRead {
+  @apply w-[8px] h-[8px] bg-link rounded-full mt-[9px];
+}
+
+.profileLinks {
+  @apply px-4 py-[12px] hover:bg-primary-00 w-[190px] flex gap-4 items-center;
+}
+.profileLinksStyle {
+  @apply text-bodysmall text-neutral-900 cursor-pointer;
+}

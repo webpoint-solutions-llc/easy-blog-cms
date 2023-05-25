@@ -1,0 +1,7 @@
+.container {
+  @apply flex flex-col bg-white border border-dashed border-neutral-400 rounded-lg py-6;
+}
+
+.dropzoneDetails {
+  @apply flex text-caption2 text-neutral-700 gap-6 mt-[9px];
+}
