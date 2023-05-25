@@ -1,0 +1,12 @@
+{
+    "list": "List company jobs Success.",
+    "create": "Creating company job Success.",
+    "get": "Get company jobs Success.",
+    "getById": "Get job by id Success.",
+    "update": "Update jobs Succeed",
+    "remove": "Remove jobs Succeed",
+    "upload": "Uploading resume Succed",
+    "error": {
+        "notFound": "Company Job not found"
+    }
+}

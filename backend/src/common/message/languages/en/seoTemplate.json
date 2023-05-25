@@ -1,0 +1,14 @@
+{
+    "list": "Seo Template list succeed",
+    "get": "Seo Template get succeed",
+    "update": "Seo Template update succeed",
+    "active": "Seo Template active succeed",
+    "inactive": "Seo Template inactive succeed",
+    "create": "Creating Seo Template Success.",
+    "remove": "Remove Succeed",
+
+    "error": {
+        "notFound": "Seo Template not found",
+        "active": "Seo Template active status invalid"
+    }
+}

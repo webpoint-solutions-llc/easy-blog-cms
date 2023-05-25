@@ -1,0 +1,10 @@
+{
+    "list": "List blog category Success.",
+    "create": "Creating blog category Success.",
+    "get": "Get blog category Success.",
+    "update": "Update Succeed",
+    "remove": "Remove Succeed",
+    "error": {
+        "notFound": "Blog category not found"
+    }
+}

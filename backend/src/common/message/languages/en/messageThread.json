@@ -1,0 +1,14 @@
+{
+    "list": "MessageThread list succeed",
+    "get": "MessageThread get succeed",
+    "update": "MessageThread update succeed",
+    "active": "MessageThread active succeed",
+    "inactive": "MessageThread inactive succeed",
+    "create": "Creating MessageThread Success.",
+    "remove": "Remove Succeed",
+
+    "error": {
+        "notFound": "MessageThread not found",
+        "active": "MessageThread active status invalid"
+    }
+}

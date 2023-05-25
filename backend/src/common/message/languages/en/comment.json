@@ -1,0 +1,10 @@
+{
+    "list": "List comment Success.",
+    "create": "Creating comment Success.",
+    "get": "Get comment Success.",
+    "update": "Update Succeed",
+    "remove": "Remove Succeed",
+    "error": {
+        "notFound": "Comment not found"
+    }
+}

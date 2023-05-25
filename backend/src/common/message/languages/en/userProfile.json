@@ -1,0 +1,11 @@
+{
+    "list": "List user profile Success.",
+    "create": "Creating user profile Success.",
+    "get": "Get Skill Success.",
+    "update": "Update Succeed",
+    "remove": "Remove Succeed",
+    "upload": "Uploading resume Succed",
+    "error": {
+        "notFound": "Skills not found"
+    }
+}

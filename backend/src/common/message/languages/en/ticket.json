@@ -1,0 +1,10 @@
+{
+    "list": "List ticket Success.",
+    "create": "Creating ticket Success.",
+    "get": "Get ticket Success.",
+    "update": "Update Succeed",
+    "remove": "Remove Succeed",
+    "error": {
+        "notFound": "Blog category not found"
+    }
+}
