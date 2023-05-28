@@ -36,6 +36,7 @@ import { DATABASE_CONNECTION_NAME } from '~/common/database/constants/database.c
         // AuthModule,
         forwardRef(() => AuthModule),
         RoleModule,
+        AwsModule,
         MongooseModule.forFeature(
             [
                 {
