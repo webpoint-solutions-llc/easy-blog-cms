@@ -1,8 +1,24 @@
 version: '3.8'
 services:
+    frontend:
+        build:
+            context: ./Blog-Builder
+            dockerfile: Dockerfile
+        hostname: talentpoint-frontend
+        container_name: talentpoint-frontend
+        ports:
+            - 5173:5173
+        networks:
+            - app-network
+        volumes:
+            - ./Blog-Builder/:/app/frontend
+        restart: unless-stopped
+        env_file:
+            - ./Blog-Builder/.env
+
     service:
         build: 
-          context: .
+          context: ./Backend
           target: dev
           dockerfile: Dockerfile
         container_name: talentpoint-backend
@@ -12,13 +28,15 @@ services:
         networks:
             - app-network
         volumes:
-            - ./src/:/app/src/
-            - .env/:/app/.env
+            - ./Backend/src/:/app/src/
+            - ./Backend/.env/:/app/.env
         restart: unless-stopped
         env_file:
-            - .env.docker
+            - ./Backend/.env.docker
         depends_on:
             - mongodb
+            - frontend
+
     mongodb:
         image: mongo:latest
         container_name: mongo
@@ -34,6 +52,7 @@ services:
         restart: unless-stopped
         networks:
             - app-network
+            
 networks:
     app-network:
         name: app-network

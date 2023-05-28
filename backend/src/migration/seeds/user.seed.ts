@@ -35,15 +35,14 @@ export class UserSeed {
 
         try {
             const superadminPassword = await this.authService.createPassword(
-                'Password123*'
+                'Password321#'
             );
             const password = await this.authService.createPassword(
-                'Password123*'
+                'Password321#'
             );
 
             await this.userService.create({
                 fullName: 'superadmin',
-                // lastName: 'test',
                 email: 'superadmin@mail.com',
                 password: superadminPassword.passwordHash,
                 passwordExpired: superadminPassword.passwordExpired,
@@ -54,7 +53,6 @@ export class UserSeed {
 
             await this.userService.create({
                 fullName: 'admin',
-                // lastName: 'test',
                 email: 'adminadmin@mail.com',
                 password: password.passwordHash,
                 passwordExpired: password.passwordExpired,
@@ -65,7 +63,6 @@ export class UserSeed {
 
             await this.userService.create({
                 fullName: 'webpoint',
-                // lastName: 'test',
                 email: 'marketing@webpoint.io',
                 password: password.passwordHash,
                 passwordExpired: password.passwordExpired,
