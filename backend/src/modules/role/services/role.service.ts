@@ -9,7 +9,10 @@ import { PermissionEntity } from '~/modules/permission/schemas/permission.schema
 import { RoleCreateDto } from '../dtos/role.create.dto';
 import { RoleUpdateDto } from '../dtos/role.update.dto';
 import { DatabaseEntity } from '~/common/database/decorators/database.decorator';
-import { ENUM_AUTH_ACCESS_FOR } from '~/common/auth/constants/auth.enum.constant';
+import {
+    ENUM_AUTH_ACCESS_FOR,
+    ENUM_PORTAL,
+} from '~/common/auth/constants/auth.enum.constant';
 
 @Injectable()
 export class RoleService {
@@ -106,6 +109,7 @@ export class RoleService {
             name: 'superadmin',
             permissions: [],
             isActive: true,
+            portal: ENUM_PORTAL.ADMIN_PORTAL,
             accessFor: ENUM_AUTH_ACCESS_FOR.SUPER_ADMIN,
         });
 
