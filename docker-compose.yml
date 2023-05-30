@@ -2,7 +2,7 @@ version: '3.8'
 services:
     frontend:
         build:
-            context: ./Blog-Builder
+            context: ./Frontend
             dockerfile: Dockerfile
         hostname: talentpoint-frontend
         container_name: talentpoint-frontend
@@ -11,10 +11,10 @@ services:
         networks:
             - app-network
         volumes:
-            - ./Blog-Builder/:/app/frontend
+            - ./Frontend/:/app/frontend
         restart: unless-stopped
         env_file:
-            - ./Blog-Builder/.env
+            - ./Frontend/.env
 
     service:
         build: 
