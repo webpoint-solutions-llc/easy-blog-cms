@@ -2,7 +2,7 @@
 
 > Easy Blog CMS
 
-Easy-Blog-CMS is an open-source solution, meaning the entire codebase is available on GitHub and continuously maintained by a large community of contributors. Enjoy the freedom to tailor the admin panel and API to your specific needs. The API is designed to be consumed by any client, be it a web application (React, Vue, Angular).
+Easy-Blog-CMS is an open-source solution, meaning the entire codebase is available on GitHub and continuously maintained by a community of contributors. Enjoy the freedom to tailor the admin panel and API to your specific needs. The API is designed to be consumed by any client, be it a web application (React, Vue, Angular).
 
 ## Developing
 
@@ -29,19 +29,19 @@ Describes which version .
 1. Clone the project
 
 ```shell
-   git clone https://github.com/webpoint-solutions-llc/easy-blog-cms`
+git clone https://github.com/webpoint-solutions-llc/easy-blog-cms`
 ```
 
 2. Run project with docker
 
 ```shell
-   docker-compose up -d
+docker-compose up -d
 ```
 
 3. To seed database/migrate
 
 ```shell
-   docker-compose exec service yarn migrate
+docker-compose exec service yarn migrate
 ```
 
 ### or
@@ -51,25 +51,25 @@ Describes which version .
 1. Clone the project
 
 ```shell
-   git clone https://github.com/webpoint-solutions-llc/easy-blog-cms`
+git clone https://github.com/webpoint-solutions-llc/easy-blog-cms`
 ```
 
 2. Run project with docker
 
 ```shell
-   make up
+make up
 ```
 
 or
 
 ```shell
-   make build
+make build
 ```
 
 3. To seed database/migrate
 
 ```shell
-   make migrate
+make migrate
 ```
 
 ## Credientials
