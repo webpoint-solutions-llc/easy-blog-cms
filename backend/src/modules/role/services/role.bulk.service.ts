@@ -18,9 +18,10 @@ export class RoleBulkService {
 
     async createMany(data: RoleCreateDto[]): Promise<RoleDocument[]> {
         return this.roleModel.insertMany(
-            data.map(({ name, permissions, accessFor }) => ({
+            data.map(({ name, permissions, accessFor, portal }) => ({
                 name,
                 isActive: true,
+                portal,
                 accessFor,
                 permissions: permissions.map((val) => new Types.ObjectId(val)),
             }))
