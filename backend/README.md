@@ -1,14 +1,12 @@
-<img src="logo/Logo.png" alt="Logo of the project" align="right">
-
-# Talents Point Backend &middot; [![Build Status](https://img.shields.io/travis/npm/npm/latest.svg?style=flat-square)](https://travis-ci.org/npm/npm) [![npm](https://img.shields.io/npm/v/npm.svg?style=flat-square)](https://www.npmjs.com/package/npm) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/your/your-project/blob/master/LICENSE)
+# Easy Blog CMS Backend &middot; [![Build Status](https://img.shields.io/travis/npm/npm/latest.svg?style=flat-square)](https://travis-ci.org/npm/npm) [![npm](https://img.shields.io/npm/v/npm.svg?style=flat-square)](https://www.npmjs.com/package/npm) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/your/your-project/blob/master/LICENSE)
 
 > Backend application for talents point
 
-Talents points is a job portal website, which allow candidate and company to create thier profile and company could post thier job opening in which candidate could apply.
+Easy-Blog-CMS is an open-source solution, meaning the entire codebase is available on GitHub and continuously maintained by a community of contributors. Enjoy the freedom to tailor the admin panel and API to your specific needs. The API is designed to be consumed by any client, be it a web application (React, Vue, Angular).
 
 ## Installing / Getting started
 
-Talents-Point use the templete for backend. Please find through the [Link](https://github.com/andrechristikan/ack-nestjs-mongoose)
+Easy Blog CMS use the templete for backend. Please find through the [Link](https://github.com/andrechristikan/ack-nestjs-mongoose)
 
 ## Developing
 
@@ -40,8 +38,7 @@ Here's a brief intro about what a developer must do in order to start developing
 the project further:
 
 ```shell
-git clone git@github.com:webpoint-solutions-llc/talent-point-back-end.git
-cd talent-point-back-end/
+git clone https://github.com/webpoint-solutions-llc/easy-blog-cms`
 yarn install
 ```
 
