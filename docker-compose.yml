@@ -1,61 +1,68 @@
-version: '3.8'
+version: "3.8"
 services:
-    frontend:
-        build:
-            context: ./Frontend
-            dockerfile: Dockerfile
-        hostname: talentpoint-frontend
-        container_name: talentpoint-frontend
-        ports:
-            - 5173:5173
-        networks:
-            - app-network
-        volumes:
-            - ./Frontend/:/app/frontend
-        restart: unless-stopped
-        env_file:
-            - ./Frontend/.env
+  frontend:
+    build:
+      context: ./frontend
+      target: dev
+      dockerfile: Dockerfile
+    hostname: talentpoint-frontend
+    container_name: talentpoint-frontend
+    command: npm run dev
+    ports:
+      - 5173:5173
+    networks:
+      - app-network
+    volumes:
+      - ./frontend/:/app
+      - /app/node_modules
+    restart: always
+    env_file:
+      - ./frontend/.env
+    environment:
+      VITE_BACKEND_HOST: http://backend:3000
+    depends_on:
+      - backend
 
-    service:
-        build: 
-          context: ./Backend
-          target: dev
-          dockerfile: Dockerfile
-        container_name: talentpoint-backend
-        hostname: talentpoint-backend
-        ports:
-            - 3000:3000
-        networks:
-            - app-network
-        volumes:
-            - ./Backend/src/:/app/src/
-            - ./Backend/.env/:/app/.env
-        restart: unless-stopped
-        env_file:
-            - ./Backend/.env.docker
-        depends_on:
-            - mongodb
-            - frontend
+  backend:
+    build:
+      context: ./backend
+      target: dev
+      dockerfile: Dockerfile
+    container_name: talentpoint-backend
+    hostname: talentpoint-backend
+    ports:
+      - 3000:3000
+    networks:
+      - app-network
+    volumes:
+      - ./backend:/app/
+      - /app/node_modules
+    command: yarn start:dev
+    restart: always
+    env_file:
+      - ./backend/.env
+    depends_on:
+      - mongodb
 
-    mongodb:
-        image: mongo:latest
-        container_name: mongo
-        hostname: mongo
-        ports:
-            - 27017:27017
-        environment:
-            MONGO_INITDB_ROOT_USERNAME: root
-            MONGO_INITDB_ROOT_PASSWORD: 123456
-            MONGO_INITDB_DATABASE: ack
-        volumes:
-            - dbdata:/data/db
-        restart: unless-stopped
-        networks:
-            - app-network
-            
+  mongodb:
+    image: mongo:latest
+    container_name: mongo
+    hostname: mongo
+    ports:
+      - 27017:27017
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: 123456
+      MONGO_INITDB_DATABASE: blogcms
+    volumes:
+      - dbdata:/data/db
+    restart: always
+    networks:
+      - app-network
+
 networks:
-    app-network:
-        name: app-network
-        driver: bridge
+  app-network:
+    name: app-network
+    driver: bridge
 volumes:
-    dbdata:
+  dbdata:

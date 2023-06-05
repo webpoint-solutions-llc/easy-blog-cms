@@ -5,7 +5,7 @@ import { version } from 'package.json';
 export default registerAs(
     'app',
     (): Record<string, any> => ({
-        name: process.env.APP_NAME || 'ack',
+        name: process.env.APP_NAME || 'blogcms',
         env: process.env.APP_ENV || 'development',
         mode: process.env.APP_MODE || 'simple',
         language: process.env.APP_LANGUAGE || 'en',
