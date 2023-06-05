@@ -66,7 +66,7 @@ import { MailModule } from './mail/mail.module';
                 DATABASE_HOST: Joi.any()
                     .default('mongodb://localhost:27017')
                     .required(),
-                DATABASE_NAME: Joi.any().default('ack').required(),
+                DATABASE_NAME: Joi.any().default('blogcms').required(),
                 DATABASE_USER: Joi.any().optional(),
                 DATABASE_PASSWORD: Joi.any().optional(),
                 DATABASE_DEBUG: Joi.boolean().default(false).required(),
